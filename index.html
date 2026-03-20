@@ -1,0 +1,58 @@
+<!--
+Alumno: Kevin Uriarte
+Materia: Programacion Web
+-->
+
+<header class="header">
+  <div class="logo">
+    <h1>CINE+ </h1>
+    <p>Proyecto usando API TMDB</p>
+  </div>
+
+  <div class="search-container">
+    <input id="search" type="text" placeholder="Buscar película..." />
+  </div>
+</header>
+
+<!-- LISTA -->
+<section id="home-section">
+  <div id="movies" class="movies-container"></div>
+</section>
+
+<!-- DETALLE PELÍCULA -->
+<section id="movie-detail-section" class="hidden">
+
+  <button onclick="goHome()">⬅ Volver</button>
+
+  <div class="movie-detail">
+    <img id="movie-poster" />
+
+    <div class="movie-info">
+      <h1 id="movie-title"></h1>
+      <p id="movie-rating"></p>
+      <p id="movie-overview"></p>
+      <p><strong>Fecha:</strong> <span id="movie-date"></span></p>
+
+      <h3>Actores:</h3>
+      <div id="actors" class="actors-container"></div>
+    </div>
+  </div>
+
+</section>
+
+<!-- DETALLE ACTOR -->
+<section id="actor-detail-section" class="hidden">
+
+  <button onclick="goHome()">⬅ Volver</button>
+
+  <div class="actor-detail">
+    <img id="actor-photo" />
+
+    <div class="actor-info">
+      <h1 id="actor-name"></h1>
+      <p id="actor-bio"></p>
+      <p><strong>Nacimiento:</strong> <span id="actor-birthday"></span></p>
+    </div>
+  </div>
+
+</section>
